@@ -26,7 +26,6 @@ You respond, "On second thought, I think we'll pass on the extra meal. Any news 
 ->DONE
 
 === rumorChoices ===
-<> we are interested.
 {servingMaid} says, "Well I've heard talk of a falling star."
 The {~healer|mage|warrior}'s eyebrows arch.
 // Quest - SS | Space System
