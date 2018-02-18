@@ -1,24 +1,31 @@
 body {
-    font-family: sans-serif;
-    font-weight: lighter;
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    background-image: url("Background.jpg"); /* Background from App */
+    /* background-color: #DEB887; /* Burly Wood */
+    /* background-color: #FFEBCD; /* Blanched Almond */
+    background-color: #ece3b7; /* Color Picker tool */
 }
 
 h1 {
     text-align: center;
-    font-weight: lighter;
+    font-size: 1.2em;
 }
 
 .container {
     display: block;
-    max-width: 600px;
+    max-width: 480px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0.5em;
 }
 
 p, a {
-    color: gray;
-    line-height: 1.7em;
-    font-size: 13pt;
+    color: #262626; /* 15% Lighter than Black */
+    line-height: 1.4em;
+    font-size: 1.15em;
+}
+a {
+	color: #DC143C;
 }
 
 p {
@@ -35,5 +42,5 @@ p.choice {
 }
 
 a:hover {
-    color: black;
+    color: red;
 }
