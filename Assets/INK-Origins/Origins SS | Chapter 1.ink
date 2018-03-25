@@ -8,12 +8,38 @@
 // What is the universe?
 // What goes on in stars?
 // What are the predictable patterns caused by Earth’s movement in the solar system?
-//
+
+// ***************************************************************
 // AUDIO
+// ***************************************************************
 // <div align="center"><audio src="http://www.regioscientiae.com/files/theme/fx-plains_1.mp3" controls autoplay loop></div>
 
-INCLUDE Death.ink
+// ***************************************************************
+// SCENES
+// ***************************************************************
+VAR castle1 = "Clun Castle"  
+VAR CelestialTower = "Celestial Tower"  // Celestrial Towers
+VAR moonTower = "The Tower of Lunae"
+VAR sunTower = "The Tower of Helios"
+VAR marsTower = "The Tower of Nergal" 
 
+// ***************************************************************
+// PEOPLE
+// ***************************************************************
+VAR mageName = "Alatar"
+VAR healerName = "Aer"
+VAR warriorName = "Darius"
+VAR servingMaid = "Jane"
+VAR servingMaid2 = "JoJo"
+VAR rumorSS = "As you may know, the Queen has been planning a 'coming of age' party for the crown prince. It is said that a star has fallen in the nearby swamps to the north. The Queen would like to know if this is a favorable sign from the gods or an evil sign. She would also like to know if more falling stars can be expected. She does not want ill favored events surrounding the prince's celebration."
+VAR queen = "Queen Justina"
+VAR nobleFamily = "Noord Vlakte"
+VAR castle2 = "Muiderslot Castle"
+VAR castellan = "Mr. Hillenar"
+VAR braheDescription = "Tycho Brahe built an observatory from which he made the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he made detailed records of his findings. He believes that the universe is a blend of the Ptolemaic and Copernican models, and created his own model in which the planets orbit the Sun and the Sun orbits the Earth."
+VAR keplerDescription = "Johannes Kepler, assistant and student of Tycho Brahe. He has used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He therefore used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time. The third law was a masterpiece of simplicity: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
+
+INCLUDE Death.ink
 
 -> Intro
 // Essential Outcome
@@ -22,49 +48,13 @@ DCI - Big Bang Theory, Cosmic Background Radiation, Redshift & galaxies moving a
 // Synposis
 Players will travel to the wandering Wizard's Tower to look for him. Some of the locals suspect that the wandering wizard is the one who is causing changes and their weather. While at the tower players will learn some basics of astronomy in about the origins of the universe.
 
-// Castle1
-VAR castle1 = "Clun Castle"  
-
-// Towers of Space
-VAR CelestialTower = "Celestial Tower"  // Celestrial Towers
-
-// Tower of the Moon
-VAR moonTower = "The Tower of Lunae"
-
-// Tower of the Sun 
-VAR sunTower = "The Tower of Helios"
-
-// Tower of Mars
-VAR marsTower = "The Tower of Nergol" 
-
-VAR servingMaid = "Jane"
-VAR servingMaid2 = "JoJo"
-VAR rumorSS = "As you may know, the Queen has been planning a 'coming of age' party for the crown prince. It is said that a star has fallen in the nearby swamps to the north. The Queen would like to know if this is a favorable sign from the gods or an evil sign. She would also like to know if more falling stars can be expected. She does not want ill favored events surrounding the prince's celebration."
-VAR queen = "Queen Justina"
-VAR nobleFamily = "Noord Vlakte"
-VAR castle2 = "Muiderslot Castle"
-VAR castellan = "Mr. Hillenar"
-
-VAR braheDescription = "Tycho Brahe built an observatory from which he made the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he made detailed records of his findings. He believes that the universe is a blend of the Ptolemaic and Copernican models, and created his own model in which the planets orbit the Sun and the Sun orbits the Earth."
-// 1571 - 1630
-// Johannes Kepler, assistant and student of Tycho Brahe. He has used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He therefore used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time. The third law was a masterpiece of simplicity: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun.
-VAR keplerDescription = "Johannes Kepler, assistant and student of Tycho Brahe. He has used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He therefore used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time. The third law was a masterpiece of simplicity: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
-
-VAR mageName = "Alatar"
-VAR healerName = "Aer"
-VAR warriorName = "Darius"
-
-// What is the universe?
-// What goes on in stars?
-// What are the predictable patterns caused by Earth’s movement in the solar system?
-
 === Intro ===
 <h3>Blue Mug</h3>
 Your party is enjoying another hearty meal at The Blue Mug inn & tavern when the serving maid {servingMaid} comes up to the table.
 {servingMaid} asks, "Anything else I can get you brave adventurers?" and looks at your party.
 + [Continue] -> party_intro
 = party_intro
-You take a second to glance around, too. Sitting to your right is {mageName}, a male mage more powerful than his young age would imply. The equally lovely and strong willed female healer {healerName} sits across from him. The brawny warrior {warriorName} sits next to her. You are a green, but enthusiatic party of adventurers.
+You take a second to glance around, too. Sitting to your right is {mageName}, a male mage more powerful than his young age would imply. The equally lovely and strong willed female healer {healerName} sits across from him. The brawny warrior {warriorName} sits next to her. You are a green, but enthusiastic party of adventurers.
 + [Continue] ->turn_to_serving_maid
 = turn_to_serving_maid
 You turn back towards {servingMaid} and reply,
@@ -99,7 +89,7 @@ The {~healer|mage|warrior}'s eyebrows arch.
 
 = rumor_decision
 Your party talks over your options.
-{mageName} says, "If we want to accept this quest, asking questions at the noble famiy's castle makes the most sense."
+{mageName} says, "If we want to accept this quest, asking questions at the castle of the noble famiy makes the most sense."
 {healerName} says, "I could check with other priests to find out their interpretation of the omen," she pauses and continues, "Going to all of those towers will require a lot of travel and we'll still need to go to the castle."
 "I just want to crack some skulls," replies {warriorName}.
 They turn and look to you. You answer,
@@ -216,14 +206,14 @@ A shadow suddenly passes over head.
 = shadow_form
 The shadow is already gone.
 [<em>Roll PERCEPTION and check with the game master</em>]
-+ [<em>PERCEPTION success</em>] -> shadow_observation
++ [<em>PERCEPTION succeedes</em>] -> shadow_observation
 + [<em>PERCEPTION fail</em>] -> shadow_observation
 
 = shadow_observation
 You ask, "Did anyone else think that shadow resembled the shape of a very large ape?"
 {mageName} says "Nonsense. They aren't native to these woods."
 {healerName} says "Besides, it would have to be massive in order to cast a shadow that size. We would have heard it approaching and leaving."
-You all look at each other with uncertainy.
+You all look at each other with uncertainty.
 + You ask, "Anyone else want to turn and go back to the Blue Mug?" -> coward
 + You state, "Well we're almost to the {marsTower}. Let's keep going" ->arrive
 =coward
@@ -236,7 +226,7 @@ You arrive at {marsTower}.
 {mageName} looks confused. You and {healerName} chuckled.
 + You proceed to the door and knock. -> tower_door_knock
 = tower_door_knock
-...to be continued in the next chapter...
+...continued in the next chapter...
 -> DONE
 
 = early
