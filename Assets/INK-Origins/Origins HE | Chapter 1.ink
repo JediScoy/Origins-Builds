@@ -1,10 +1,14 @@
 // ***************************************************************
 //
 // ORGINS an Earth & Space Science story
-// ES | Earth's Systems
+// HE | History of Earth
 //
 // ***************************************************************
 //
 // ENDURING QUESTIONS
-// How do the major Earth systems interact?
-// How do the properties and movements of water shape Earth’s surface and affect its systems?
+// How do people reconstruct and date events in Earth’s planetary history?
+// Why do the continents move?
+
+=== HE_Intro ===
+
+->DONE
