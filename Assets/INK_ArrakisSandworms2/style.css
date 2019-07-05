@@ -1,0 +1,46 @@
+body {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    background-image: url("BG2.jpg"); /* Background from App */
+    /* background-color: #DEB887; /* Burly Wood */
+    /* background-color: #FFEBCD; /* Blanched Almond */
+    background-color: #ece3b7; /* Color Picker tool */
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.container {
+    display: block;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+p, a {
+    color: #262626; /* 15% Lighter than Black */
+    line-height: 1.4em;
+    font-size: 1.2em;
+}
+a {
+	color: #DC143C;
+}
+
+p {
+    opacity: 0.0;
+    transition: opacity 1.0s;
+}
+
+p.show {
+    opacity: 1.0;
+}
+
+p.choice {
+    text-align: center;
+}
+
+a:hover {
+    color: red;
+}
