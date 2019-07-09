@@ -1,3 +1,18 @@
+#title: Discovering Canis Villa II.
+#author: Master Scoy
+-> Preface
+=== Preface ===
+#audio:
+Welcome weary adventure!
+
+->StartMenu
+
+= StartMenu
++ [PRESS START] -> EpisodeONE.Scene1
+
+-> DONE
+
+==EpisodeONE==
 // ****************************************
 //
 // Discovering Canis Villa | Chapter 2
@@ -5,11 +20,8 @@
 //
 // ****************************************
 
--> CanisVilla
-
-== CanisVilla ==
-= Scene
-<b>The Village</b>
+=Scene1
+<h3>The Village</h3>
  A small village lies before you. The village center is loosely surrounded by a variety of stout timbered buildings. You are greeted by a weathered signpost <i>Canis Villa</i>.
  + [Enter the village] ->village_center
 
@@ -44,7 +56,7 @@ You decide the village is not for you. You head back west. It takes much longer 
  A hanging sign with a dark blue mug above catches your eye. An inscription along the bottom reads "Drink from the cup of knowledge."
  This looks like a place to find some answers.
  + [Enter the Blue Mug] -> BlueMug.scene
- * [Walk to the nearest courtyard] -> CanisVilla.courtyard1
+ * [Walk to the nearest courtyard] -> EpisodeONE.courtyard1
  
 = scene
 You enter and look around <i>The Blue Mug</i>. Its a basic, two story wooden inn and tavern with a bar and dining on the first floor. Worn stairs lead above to rooms. The decor is simple and slighty dingy, but of stout timber material.
@@ -60,7 +72,7 @@ You enter and look around <i>The Blue Mug</i>. Its a basic, two story wooden inn
 = help_needed
 The people look beaten down. This community needs helps. You are not the most talented of adventurers YET, but you are PERSISTENT. A positive, can-do attitude could make the difference.
 + [Stay and help]-> BlueMug.stay_help
-* [Leave the village] -> CanisVilla.leave_early
+* [Leave the village] -> EpisodeONE.leave_early
 
 = stay_help
 You silently decide at that moment that you'll stay and help. Even if you had openly proclaimed your intentions, the town folk would not thank or praise you. Caring about others is the right thing to do though. They are lucky that you have a spine.
@@ -150,11 +162,11 @@ Stones have fallen around it.
 === Death ===
 = One
 You have died, but do not fear failure. Kind paladins and clerics wander these lands. Soon enough your bones will be found and your life renewed.
-+ [Res] -> CanisVilla.Scene
++ [Res] -> EpisodeONE.Scene1
 
 = Two
 You have died <i>yet again</i>, but do not fear failure. You are demostrating PERSISTENCE and GRIT. Kind paladins and clerics wander these lands. Soon enough your bones will be found and your life renewed.
-+ [Res] -> CanisVilla.Scene
++ [Res] ->EpisodeONE.Scene1
 
 = Eastport_laser_fish
 <i>Jedi Master Scoy has fallen asleep again. This area is under development, check back again later.

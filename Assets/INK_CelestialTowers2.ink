@@ -12,7 +12,7 @@
 // AUDIO
 // <div align="center"><audio src="http://www.regioscientiae.com/files/theme/fx-plains_1.mp3" controls autoplay loop></div>
 
-INCLUDE Death.ink
+INCLUDE INK_Death.ink
 
 
 -> Intro
@@ -154,7 +154,8 @@ Besides the occasional bushwhacking the walk isn't too difficult and soon you ap
 Stones have fallen around it.
 + [The place is clearly abandoned.]
 - At least you <i>thought</i> it was abandoned. The Drow warrior slips from a shadowy side entrance. Blades move so fast they are a blur. This quickly ends your otherwise pleasant walk.
-+ [Death]-> Death
++ [Death]-> DONE
+
 Upon entering the tower room you see stacks of papers and books
 -> DONE
 
