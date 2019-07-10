@@ -52,6 +52,35 @@ This section is for SEASON to keep INKY from getting confused. Its also a place 
 
 === Prologue ===
 <h3>{PrologueTitle}</h3>
+You are sitting at the Blue Mug enjoying a dinner - not fine dining by any criteria, but good enough - retelling nearby patrons about your latest adventure with only a few minor embellishments.
+when an eccentric elderly man comes rushing in, door banging open. He rushes over to a young man seated a couple tables over towards the west wall. 
+
+[PROFESSOR]
+OLD MAN: "We must solve this cryptograph Axel! The older man says to the younger. 
+
+[AXEL]
+YOUNG MAN: "I've told you uncle, it is not possible what is suggested in the early part of the letter. Why waste our time on this puzzle?"
+
+OLD SCHOLAR: "Why? Why?! He says getting louder and louder. For one, nothing is impossible my boy. Secondly, how can you call yourself a learned man with such an unknown before and NOT be tempted to solve it?!"
+
+While you don't move any closer, you definitely pay a little more attention to the conversation happening between the two.
+
+At that moment another group comes in accompanied by a gust of wind. The paper the old man had many waving around is blow from his waving hands is blown under your table. You lean down and pick it up. You take a quick glance before the old man comes over and snatches it away.
+[Present students with brief look at the cryptographic image from Journey to the Center of the Earth]
+
+YOU: I happen to be quite good at solving puzzles if you need a hand.
+
+OLD MAN: No thank you. He bows and turns back toward the young man.
+
+YOUNG MAN: A light in the young man's eyes sparks, "If you are as serious as you say uncle and then we may need a lot of help."
+
+OLD MAN: "Absolutely not."
+
+YOUNG MAN: This denial gives the young man more forwardness, "Hello, I am Axel and this my uncle, Alfred Wegner, a professor of geology.
+
+YOU: "Greeting Axel and Professor Wegner"
+
+
 +[START MENU]
     ->StartMenu
 +[NEXT]
