@@ -1,16 +1,28 @@
 #title: Wandering in the Woods
 #author: Master Scoy
 
-// VARIABLES for Story Outline
-VAR Season0Title = "Origins: Prologue"
-VAR 0PrologueTitle = "The Woods"
-VAR 0EpisodeOne = "Awake in the Woods"
-VAR 0EpisodeTwo = "The Crossroads"
-VAR 0EpisodeThree = "Persistence"
-VAR 0EpisodeFour = "The Village"
-VAR 0EpisodeFive = "The Blue Mug"
-VAR 0EpilogueTitle = "Epilogue"
+// STORY OUTLINE
+CONST Season0Title =    "Wandering in the Woods"
+CONST 0PrologueTitle =  "The Woods"
+CONST 0EpisodeOne =     "The Blue Mug"
+CONST 0EpisodeTwo =     "The Crossroads"
+CONST 0EpisodeThree =   "The Village"
+CONST 0EpisodeFour =    "The Blue Mug"
+CONST 0EpisodeFive =    "Habits of Minda"
+CONST 0EpilogueTitle =  "Epilogue"
 
+// CHARACTERS
+VAR TheCleric =         "The cleric"
+VAR theCleric =         "the cleric"
+
+VAR TheRogue =          "The rogue"
+VAR theRogue =          "the rogue"
+
+VAR TheFighter =        "The fighter"
+VAR theFighter =        "the fighter"
+
+VAR TheWizard =         "The wizard"
+VAR theWizard =         "the wizard"
 // ****************************************
 //
 // Discovering Canis Villa | Chapter 1
@@ -20,14 +32,6 @@ VAR 0EpilogueTitle = "Epilogue"
 // AUDIO
 // <div align="center"><audio src="http://www.regioscientiae.com/files/theme/fx-valleys.mp3" controls autoplay loop></div>
 
-// INVENTORY VARIABLES
-VAR food = "no food"
-VAR weapons = "no weapons"
-VAR armor = "no armor"
-VAR items = "no special items, not even flint and steel"
-
-// CHARACTERS
-VAR ServingMaid = "Jane"
 
 
 ->0StartMenu
@@ -281,6 +285,47 @@ You know to be useful to the community - and not die every five minutes - you ne
 - Find the nearest Master and ask for the access code to the library in the ether. Gaining access to one of the librarys in the ether will grant you access to others, so your sequence of actions is important.
 
 -> END
+
  // Explore the quaint village to discover, Starter Set, your first Quest. Like all others, this Quest has multiple tasks to accomplish. Generally each quest has Training, an Adventure, a Boss, and a Boss Elite. An adventure may have one to four parts within it. Read each description of the required tasks carefully. Ask members of your Party for assistance and ask Jedi Master Scoy for clarification as needed.
  
 // After completing the requirements consult with Jedi Master Scoy and move on to the next Quest. Be sure to follow the quest line for your campaign. All campaigns (Earth Science, Biology, Physical Science, Zoology, etc) start here. Good luck!
+
+// INVENTORY VARIABLES
+VAR food =          "no food"
+VAR weapons =       "no weapons"
+VAR armor =         "no armor"
+VAR items =         "no special items, not even flint and steel"
+
+// DICE ROLLS
+VAR d4 =    "1d4"
+VAR d6 =    "1d6"
+VAR d8 =    "1d8"
+VAR d10 =   "1d10"
+VAR d12 =   "1d12"
+VAR d20 =   "1d20"
+VAR d100 =  "1d100"
+
+// MOVEMENT
+TODO: add a STEALTH roll option
+VAR MoveStealth = "move along trying be undetected"
+VAR MoveWalk = "walk"
+VAR MoveHustle = "move briskly"
+VAR MoveRun = "run"
+CONST InitiativeExplained = "Everyone in combat or near combat, rolls a d20 to determine the order of each player's actions. For example, if PLAYER ONE rolls a 5 and PLAYER TWO rolls a 15, then PLAYER TWO performs his or her action before PLAYER TWO. Monsters also roll initiative."
+
+// NPCS
+VAR Bartender =         "Shamis"
+VAR ServingMaid =       "Jane"
+VAR Farmer1 =           "James"
+VAR Farmer2 =           "Robert"
+VAR Villager1 =         "Dan"
+VAR Boy1    =           "Timothy"
+VAR Girl1   =           "Becca"
+VAR BanditStats =      "<b>BANDIT</b> AC: 12 HP: 11"
+VAR BanditAction1 =     "<b>Scimitar</b> +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
+VAR BanditAction2 =     "<b>Light Crossbow</b> +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+VAR Drow =              ""
+
+ 
+
+// MONSTERS
