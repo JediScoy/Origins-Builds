@@ -1,5 +1,8 @@
 #title: Adventure to New Horizons
 #author: Master Scoy
+
+INCLUDE OriginsGlobalVariables.ink
+
 // VARIABLES for Story Outline
 VAR SeasonTitle = "Adventure to New Horizons"
 VAR PrologueTitle = "THE BLUE MUG"

@@ -1,6 +1,8 @@
 #title: Journey to the Core
 #author: Master Scoy
 
+INCLUDE OriginsGlobalVariables.ink
+
 // VARIABLES for Story Outline
 VAR SeasonTitle = "Journey to the Core"
 VAR PrologueTitle = "THE BLUE MUG"

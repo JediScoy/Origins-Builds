@@ -1,6 +1,8 @@
 #title: Wandering in the Woods
 #author: Master Scoy
 
+INCLUDE OriginsGlobalVariables.ink
+
 // STORY OUTLINE
 CONST Season0Title =    "Wandering in the Woods"
 CONST 0PrologueTitle =  "The Woods"
@@ -10,24 +12,6 @@ CONST 0EpisodeThree =   "The Village"
 CONST 0EpisodeFour =    "The Blue Mug"
 CONST 0EpisodeFive =    "Habits of Minda"
 CONST 0EpilogueTitle =  "Epilogue"
-
-// CHARACTERS
-VAR TheCleric =         "The cleric"
-VAR theCleric =         "the cleric"
-
-VAR TheRogue =          "The rogue"
-VAR theRogue =          "the rogue"
-
-VAR TheFighter =        "The fighter"
-VAR theFighter =        "the fighter"
-
-VAR TheWizard =         "The wizard"
-VAR theWizard =         "the wizard"
-// ****************************************
-//
-// Discovering Canis Villa | Chapter 1
-// Awake in the Woods
-// ****************************************
 
 // AUDIO
 // <div align="center"><audio src="http://www.regioscientiae.com/files/theme/fx-valleys.mp3" controls autoplay loop></div>
@@ -66,6 +50,7 @@ You have {items}.
 
 ==== AboutORIGINS ====
 This is the {Season0Title} is for Earth & Space Science series "ORIGINS."
+{CYOAPurpose}
 
     +[START MENU]
         ->0StartMenu
@@ -296,26 +281,7 @@ VAR weapons =       "no weapons"
 VAR armor =         "no armor"
 VAR items =         "no special items, not even flint and steel"
 
-// DICE ROLLS
-VAR d4 =    "1d4"
-VAR d6 =    "1d6"
-VAR d8 =    "1d8"
-VAR d10 =   "1d10"
-VAR d12 =   "1d12"
-VAR d20 =   "1d20"
-VAR d100 =  "1d100"
-
-// MOVEMENT
-TODO: add a STEALTH roll option
-VAR MoveStealth = "move along trying be undetected"
-VAR MoveWalk = "walk"
-VAR MoveHustle = "move briskly"
-VAR MoveRun = "run"
-CONST InitiativeExplained = "Everyone in combat or near combat, rolls a d20 to determine the order of each player's actions. For example, if PLAYER ONE rolls a 5 and PLAYER TWO rolls a 15, then PLAYER TWO performs his or her action before PLAYER TWO. Monsters also roll initiative."
-
 // NPCS
-VAR Bartender =         "Shamis"
-VAR ServingMaid =       "Jane"
 VAR Farmer1 =           "James"
 VAR Farmer2 =           "Robert"
 VAR Villager1 =         "Dan"
@@ -326,6 +292,5 @@ VAR BanditAction1 =     "<b>Scimitar</b> +3 to hit, reach 5 ft., one target. Hit
 VAR BanditAction2 =     "<b>Light Crossbow</b> +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
 VAR Drow =              ""
 
- 
-
 // MONSTERS
+

@@ -1,6 +1,8 @@
 #title: Voyage under the Sea
 #author: Master Scoy
 
+INCLUDE OriginsGlobalVariables.ink
+
 // VARIABLES for Story Outline
 VAR SeasonTitle = "Voyage under the Sea"
 VAR PrologueTitle = "THE BLUE MUG"

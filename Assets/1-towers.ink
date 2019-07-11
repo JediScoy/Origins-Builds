@@ -1,6 +1,8 @@
 #title: Discovery in the Celestial Towers
 #author: Master Scoy
 
+INCLUDE OriginsGlobalVariables.ink
+
 // VARIABLES for Story Outline
 VAR SeasonTitle = "Discovery in the Celestial Towers"
 VAR PrologueTitle = "THE BLUE MUG"
