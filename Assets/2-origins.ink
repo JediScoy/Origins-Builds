@@ -31,9 +31,7 @@ VAR S2Epilogue =        "Epilogue"
 {CYOAPurpose}
 {Setting}
     + [...]
--
-
-<h4>Objectives of <em>{Season2}</em></h4>
+-<h4>Objectives of <em>{Season2}</em></h4>
 \* Content 
 \* Content
 \* Content
@@ -43,9 +41,7 @@ VAR S2Epilogue =        "Epilogue"
 FIRST PUBLISHED: 
 LAST UPDATED:
 + NPCs & MONSTERS (Spoliers)
-- {StoneElemental}
-
-
+- 
 + [MENU]
     ->StartMenu2
     

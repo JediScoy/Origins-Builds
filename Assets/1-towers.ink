@@ -4,59 +4,64 @@
 INCLUDE OriginsGlobalVariables.ink
 
 // VARIABLES for Story Outline
-VAR SeasonTitle = "Discovery in the Celestial Towers"
-VAR PrologueTitle = "THE BLUE MUG"
-VAR EpisodeOne = "MUIDERSLOT CASTLE"
-VAR EpisodeTwo = "Room 2"
-VAR EpisodeThree = "Room 3"
-VAR EpisodeFour = "Room 4"
-VAR EpisodeFive = "Room 5"
-VAR EpilogueTitle = "Epilogue"
+VAR Season1 = "Discovery in the Celestial Towers"
+VAR S1PrologueTitle = "THE BLUE MUG"
+VAR S1EpisodeOne = "MUIDERSLOT CASTLE"
+VAR S1EpisodeTwo = "Room 2"
+VAR S1EpisodeThree = "Room 3"
+VAR S1EpisodeFour = "Room 4"
+VAR S1EpisodeFive = "Room 5"
+VAR S1EpilogueTitle = "Epilogue"
 
-->StartMenu
+->S1StartMenu
 
-==== Preface ====
+=== S1Preface ===
 #audio: fx-valleys
-<em>Welcome weary adventurer! This story takes place in <em>Regio Scientiae: A Land of Understanding. Its a world of magic and steampunk, and a place for you to develop grit and explore curiosities. The quest narratives maybe done solo. However, they are best experienced the first time as playful interaction with the game master and neighboring, real life players.
-+ [MENU]
-    ->StartMenu
+{CYOAPurpose}
+{Setting}
+    + [...]
+-<h4>Objectives of <em>{Season1}</em></h4>
+\* Content 
+\* Content
+\* Content
+\* Content
+\* Habits of Mind -
 
-==== ABOUTCelestialTowers ====
-This knot is for the Series and Season Number. For Example "Preface" and "Season 0."
-Purpose: to keep INKY from getting confused between each season "S" and episode "Ep"
-    ->Season1
+FIRST PUBLISHED: 
+LAST UPDATED:
++ NPCs & MONSTERS (Spoliers)
+- 
++ [MENU]
+    ->S1StartMenu
     
-=== Season1 ===
-<h1>{SeasonTitle}</h1>
-This section is for SEASON to keep INKY from getting confused. Its also a place to write a season summary without special text formatting. It shouldn't be visible to the reader. 
 // Essential Outcome
 DCI - Big Bang Theory, Cosmic Background Radiation, Redshift & galaxies moving away, many light elements
 
 // Synposis
 Players will travel to the wandering Wizard's Tower to look for him. Some of the locals suspect that the wandering wizard is the one who is causing changes and their weather. While at the tower players will learn some
 +[START MENU]
-    ->StartMenu
+    ->S1StartMenu
     
 
 ->DONE
 
-=== StartMenu ===
+=== S1StartMenu ===
 <h3>Start Menu</h3>
 <em>Choose wisely</em>
-+ {not Preface} [Preface]
-    ->Preface
++ {not S1Preface} [Preface]
+    ->S1Preface
 + [PRESS START]
-    -> Prologue
+    -> S1Prologue
 + [Episode 1]
-    -> Ep1
+    -> S1Ep1
 + [Episode 2]
-    -> Ep2
+    -> S1Ep2
 + [Episode 3]
-    -> Ep3
+    -> S1Ep3
 + [Episode 4]
-    -> Ep4
+    -> S1Ep4
 + [Episode 5]
-    -> Ep5
+    -> S1Ep5
 
 
 
@@ -65,11 +70,11 @@ Players will travel to the wandering Wizard's Tower to look for him. Some of the
 
 
 ->DONE
-=== Prologue ===
-<h3>{PrologueTitle}</h3>
+=== S1Prologue ===
+<h3>{S1PrologueTitle}</h3>
 <h3>Blue Mug</h3>
-Your party is enjoying another hearty meal at The Blue Mug inn & tavern when the serving maid {servingMaid} comes up to the table.
-{servingMaid} asks, "Anything else I can get you brave adventurers?" and looks at your party.
+Your party is enjoying another hearty meal at The Blue Mug inn & tavern when the serving maid {ServingMaid} comes up to the table.
+{ServingMaid} asks, "Anything else I can get you brave adventurers?" and looks at your party.
 + [Continue] -> party_intro
 = party_intro
 You take a second to glance around, too. Sitting to your right is {mageName}, a male mage more powerful than his young age would imply. The equally lovely and strong willed female healer {healerName} sits across from him. The brawny warrior {warriorName} sits next to her. You are a green, but enthusiastic party of adventurers.
@@ -111,19 +116,19 @@ Your party talks over your options.
 {healerName} says, "I could check with other priests to find out their interpretation of the omen," she pauses and continues, "Going to all of those towers will require a lot of travel and we'll still need to go to the castle."
 "I just want to crack some skulls," replies {warriorName}.
 They turn and look to you. You answer,
-+ "Lets go to {castle2}, home of the noble family" ->Ep1
++ "Lets go to {castle2}, home of the noble family" ->S1Ep1
 + "Lets go to {moonTower}" -> MoonTower.early
 + "Let's go to {sunTower}" -> SunTower.early
 + "Let's go to {marsTower}." -> MarsTower.early
 +[START MENU]
-    ->StartMenu
+    ->S1StartMenu
 +[NEXT]
-    ->Ep1
+    ->S1Ep1
     
 ->DONE
 
-== Ep1 ==
-<h3>{EpisodeOne}</h3>
+== S1Ep1 ==
+<h3>{S1EpisodeOne}</h3>
 The trip to {castle2} is uneventful. You are greeted by {castellan} the castellan, the custodian of the {nobleFamily}'s castle.
 + [Continue] -> castellanIntroduction
 = castellanIntroduction
@@ -206,7 +211,7 @@ You open the cover of the book and see a description of the astronomers on the f
 
 = early
 You arrive at {moonTower}, but don't learn anything helpful. For now, it's best to go to {castle2}.
-+ [Continue] ->Ep1
++ [Continue] ->S1Ep1
 
 -> DONE
 
@@ -216,7 +221,7 @@ You arrive at {moonTower}, but don't learn anything helpful. For now, it's best 
 
 = early
 You arrive at {sunTower}, but don't learn anything helpful. For now, it's best to go to {castle2}.
-+ [Continue] ->Ep1
++ [Continue] ->S1Ep1
 -> DONE
 
 === MarsTower ===
@@ -256,7 +261,7 @@ You arrive at {marsTower}.
 
 = early
 You arrive at {marsTower}, but don't learn anything helpful. For now, it's best to go to {castle2}.
-+ [Continue] ->Ep1
++ [Continue] ->S1Ep1
 
 
 === ChapterOne ===
@@ -305,58 +310,58 @@ Stones have fallen around it.
 Upon entering the tower room you see stacks of papers and books
 -> DONE
 
-=== Death ===
+=== S1Death ===
 You have died
-+ REZ ->StartMenu
++ REZ ->S1StartMenu
 
 
 
 +[START MENU]
-    ->StartMenu
+    ->S1StartMenu
 +[NEXT]
-    ->Ep1
+    ->S1Ep1
     
 ->DONE
 
-== Ep2 ==
-<h3>{EpisodeTwo}</h3>
+== S1Ep2 ==
+<h3>{S1EpisodeTwo}</h3>
 +[START MENU]
-    ->StartMenu
+    ->S1StartMenu
 +[NEXT]
-    ->Ep3
+    ->S1Ep3
     
 ->DONE
 
-== Ep3 ==
-<h3>{EpisodeThree}</h3>
+== S1Ep3 ==
+<h3>{S1EpisodeThree}</h3>
 +[START MENU]
-    ->StartMenu
+    ->S1StartMenu
 +[NEXT]
-    ->Ep4
+    ->S1Ep4
     
 ->DONE
 
-== Ep4 ==
-<h3>{EpisodeFour}</h3>
+==S1Ep4 ==
+<h3>{S1EpisodeFour}</h3>
 +[START MENU]
-    ->StartMenu
+    ->S1StartMenu
 +[NEXT]
-    ->Ep5
+    ->S1Ep5
     
 ->DONE
 
-== Ep5 ==
-<h3>{EpisodeFive}</h3>
+== S1Ep5 ==
+<h3>{S1EpisodeFive}</h3>
 
 +[START MENU]
-    ->StartMenu
+    ->S1StartMenu
 +[NEXT]
-    ->Epilogue
+    ->S1Epilogue
     
 ->DONE
 
-== Epilogue ==
-<h3>{EpilogueTitle}</h3>
+== S1Epilogue ==
+<h3>{S1EpilogueTitle}</h3>
 ->END
  basics of astronomy in about the origins of the universe.
 ->DONE

@@ -4,56 +4,56 @@
 INCLUDE OriginsGlobalVariables.ink
 
 // VARIABLES for Story Outline
-VAR SeasonTitle = "Journey to the Core"
-VAR PrologueTitle = "THE BLUE MUG"
-VAR EpisodeOne = "Episode 1"
-VAR EpisodeTwo = "Episode 2"
-VAR EpisodeThree = "Episode 3"
-VAR EpisodeFour = "Episode 4"
-VAR EpisodeFive = "Episode 5"
-VAR EpilogueTitle = "Epilogue"
+VAR Season3Title = "Journey to the Core"
+VAR S3PrologueTitle = "THE BLUE MUG"
+VAR S3EpisodeOne = "Episode 1"
+VAR S3EpisodeTwo = "Episode 2"
+VAR S3EpisodeThree = "Episode 3"
+VAR S3EpisodeFour = "Episode 4"
+VAR S3EpisodeFive = "Episode 5"
+VAR S3EpilogueTitle = "Epilogue"
 
-->StartMenu
+->S3StartMenu
 
 ==== Preface ====
 #audio: fx-valleys
 <em>Welcome weary adventurer! This story takes place in <em>Regio Scientiae: A Land of Understanding. Its a world of magic and steampunk, and a place for you to develop grit and explore curiosities. The quest narratives maybe done solo. However, they are best experienced the first time as playful interaction with the game master and neighboring, real life players.
 + [MENU]
-    ->StartMenu
+    ->S3StartMenu
 
-==== AboutPreface ====
+==== S3Preface ====
 This knot is for the Series and Season Number. For Example "Preface" and "Season 0."
 Purpose: to keep INKY from getting confused between each season "S" and episode "Ep" ->S1
 === S1 ===
-<h1>{SeasonTitle}</h1>
+<h1>{Season3Title}</h1>
 This section is for SEASON to keep INKY from getting confused. Its also a place to write a season summary without special text formatting. It shouldn't be visible to the reader. 
 +[START MENU]
-    ->StartMenu
+    ->S3StartMenu
     
 ->DONE
 
-=== StartMenu ===
+=== S3StartMenu ===
 <h3>Start Menu</h3>
 <em>Choose wisely</em>
 + {not Preface} [Preface]
-    ->Preface
+    ->S3Preface
 + [PRESS START]
-    -> Prologue
+    ->S3Prologue
 + [Episode 1]
-    -> Ep1
+    ->S3Ep1
 + [Episode 2]
-    -> Ep2
+    ->S3Ep2
 + [Episode 3]
-    -> Ep3
+    ->S3Ep3
 + [Episode 4]
-    -> Ep4
+    ->S3Ep4
 + [Episode 5]
-    -> Ep5
+    ->S3Ep5
 
 -> DONE
 
-=== Prologue ===
-<h3>{PrologueTitle}</h3>
+=== S3Prologue ===
+<h3>{S3PrologueTitle}</h3>
 You are sitting at the Blue Mug enjoying a dinner - not fine dining by any criteria, but good enough - retelling nearby patrons about your latest adventure with only a few minor embellishments.
 when an eccentric elderly man comes rushing in, door banging open. He rushes over to a young man seated a couple tables over towards the west wall. 
 
@@ -84,60 +84,60 @@ YOU: "Greeting Axel and Professor Wegner"
 
 
 +[START MENU]
-    ->StartMenu
+    ->S3StartMenu
 +[NEXT]
-    ->Ep1
+    ->S3Ep1
     
 ->DONE
 
-== Ep1 ==
-<h3>{EpisodeOne}</h3>
+== S3Ep1 ==
+<h3>{S3EpisodeOne}</h3>
 +[START MENU]
-    ->StartMenu
+    ->S3StartMenu
 +[NEXT]
-    ->Ep2
+    ->S3Ep2
     
 ->DONE
 
-== Ep2 ==
-<h3>{EpisodeTwo}</h3>
+== S3Ep2 ==
+<h3>{S3EpisodeTwo}</h3>
 +[START MENU]
-    ->StartMenu
+    ->S3StartMenu
 +[NEXT]
-    ->Ep3
+    ->S3Ep3
     
 ->DONE
 
-== Ep3 ==
-<h3>{EpisodeThree}</h3>
+== S3Ep3 ==
+<h3>{S3EpisodeThree}</h3>
 +[START MENU]
-    ->StartMenu
+    ->S3StartMenu
 +[NEXT]
-    ->Ep4
+    ->S3Ep4
     
 ->DONE
 
-== Ep4 ==
-<h3>{EpisodeFour}</h3>
+== S3Ep4 ==
+<h3>{S3EpisodeFour}</h3>
 +[START MENU]
-    ->StartMenu
+    ->S3StartMenu
 +[NEXT]
-    ->Ep5
+    ->S3Ep5
     
 ->DONE
 
-== Ep5 ==
-<h3>{EpisodeFive}</h3>
+== S3Ep5 ==
+<h3>{S3EpisodeFive}</h3>
 
 +[START MENU]
-    ->StartMenu
+    ->S3StartMenu
 +[NEXT]
     ->Epilogue
     
 ->DONE
 
 == Epilogue ==
-<h3>{EpilogueTitle}</h3>
+<h3>{S3EpilogueTitle}</h3>
 ->END
 
 // ***************************************************************

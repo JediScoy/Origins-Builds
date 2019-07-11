@@ -6,11 +6,11 @@ INCLUDE OriginsGlobalVariables.ink
 // STORY OUTLINE
 CONST Season0Title =    "Wandering in the Woods"
 CONST 0PrologueTitle =  "The Woods"
-CONST 0EpisodeOne =     "The Blue Mug"
+CONST 0EpisodeOne =     "Awake in the Woods"
 CONST 0EpisodeTwo =     "The Crossroads"
 CONST 0EpisodeThree =   "The Village"
 CONST 0EpisodeFour =    "The Blue Mug"
-CONST 0EpisodeFive =    "Habits of Minda"
+CONST 0EpisodeFive =    "Habits of Mind"
 CONST 0EpilogueTitle =  "Epilogue"
 
 // AUDIO
@@ -18,8 +18,8 @@ CONST 0EpilogueTitle =  "Epilogue"
 
 
 
-->0StartMenu
-=== 0StartMenu ===
+->StartMenu0
+=== StartMenu0 ===
 <h3>Start Menu</h3>
 <em>Choose wisely</em>
 + {not Preface} [Preface]
@@ -36,8 +36,6 @@ CONST 0EpilogueTitle =  "Epilogue"
     -> 0Ep4
 + [{0EpisodeFive}]
     -> 0Ep5
-+ [About ORIGINS]
-    -> AboutORIGINS
 -> DONE
 
 ===Inventory===
@@ -53,14 +51,32 @@ This is the {Season0Title} is for Earth & Space Science series "ORIGINS."
 {CYOAPurpose}
 
     +[START MENU]
-        ->0StartMenu
+        ->StartMenu0
 ->DONE
     
 ==== Preface ====
 #audio: fx-valleys
-<em>Welcome weary adventurer! This story takes place in <em>Regio Scientiae: A Land of Understanding. Its a world of magic and steampunk, and a place for you to develop grit and explore curiosities. The quest narratives maybe done solo. However, they are best experienced the first time as playful interaction with the game master and neighboring, real life players.
-    + [START MENU]
-        ->0StartMenu
+#audio: fx-valleys
+{CYOAPurpose}
+{Setting}
+    + [...]
+-
+
+<h4>Objectives of <em>//{Season0}</em></h4>
+\* Content 
+\* Content
+\* Content
+\* Content
+\* Habits of Mind -
+
+FIRST PUBLISHED: 
+LAST UPDATED:
++ NPCs & MONSTERS (Spoliers)
+-
+
++ [MENU]
+    ->StartMenu0
+    
 ->DONE
 
 === 0Prologue ===
@@ -69,7 +85,7 @@ The dense deciduous forest has yellow-white rays of light shooting through out i
     +[NEXT EPISODE]
         ->0Ep1
     +[<strong>Ω</strong>]
-        ->0StartMenu
+        ->StartMenu0
 ->DONE
 
 == 0Ep1 ==
@@ -94,7 +110,7 @@ Once you get your footing on the path, its an easy walk. You travel less than {~
     + [NEXT EPISODE]
         ->0Ep2
     +[<strong>Ω</strong>]
-        ->0StartMenu
+        ->StartMenu0
 ->DONE
 
 // CLUN CASTLE
@@ -159,7 +175,7 @@ The forest comes to a clearing and opens to village.
     +[NEXT EPISODE]
         ->0Ep3
     +[<strong>Ω</strong>]
-        ->0StartMenu
+        ->StartMenu0
 ->DONE
 
 == 0Ep3 ==
@@ -169,7 +185,7 @@ The coming weeks are going to be a challenge. Growth in mind and muscle will be 
     +[NEXT EPISODE]
         ->0Ep4
     +[<strong>Ω</strong>]
-        ->0StartMenu
+        ->StartMenu0
 
 == 0Ep4 ==
 // CANIS VILLA
@@ -197,7 +213,7 @@ You walk into the courtyard, but nothing seems to be going on there. Most people
 You decide the village is not for you. You head back west. It takes much longer without a ride, but you come to the crossroads again.
     // + You continue west. -> ClunCastle.early
    +[<strong>Ω</strong>]
-        ->0StartMenu
+        ->StartMenu0
 
 = sign
  A hanging sign with a dark blue mug above catches your eye. An inscription along the bottom reads "Drink from the cup of knowledge."
@@ -211,7 +227,7 @@ You decide the village is not for you. You head back west. It takes much longer 
     +[NEXT EPISODE]
         ->0Ep5
     +[<strong>Ω</strong>]
-        ->0StartMenu
+        ->StartMenu0
         
 == 0Ep5 ==
 <h3>{0EpisodeFive}</h3>

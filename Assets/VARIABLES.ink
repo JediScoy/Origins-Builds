@@ -1,1 +1,0 @@
-VAR Me = "Me variable"
