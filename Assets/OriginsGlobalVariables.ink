@@ -39,19 +39,24 @@ VAR MoveHustle = "move briskly"
 VAR MoveRun = "run"
 CONST InitiativeExplained = "Everyone in combat or near combat, rolls a d20 to determine the order of each player's actions. For example, if PLAYER ONE rolls a 5 and PLAYER TWO rolls a 15, then PLAYER TWO performs his or her action before PLAYER TWO. Monsters also roll initiative."
 
-// SETTINGS
-VAR Setting           = "<h4>Setting</h4> This story takes place in <em>Regio Scientiae</em> - A Land of Understanding. Its a world of magic and steampunk, and a place for you to develop grit and explore curiosities. The quest narratives maybe done solo. However, they are best experienced the first time as playful interaction with the game master and neighboring, real life players."
+// PREFACE
+VAR Setting           = "This story takes place in \"Regio Scientiae: A Land of Understanding.\" Its a world of magic and steampunk. The story is a Choose Your Own Adventure (CYOA) which means You are an reader and active Player in story. The narratives can be done solo, but they are best experienced the first time as playful interaction with the Master Scoy (game master and teacher) and other real life Players (your classmates). NOTE: I do my best to make it functional and interesting, but if you encounter dead ends or have story suggestions - let me know!"
 
-VAR CYOAPurpose    = "<h4>Purpose of the <em>Origins Series</em></h4>"
+VAR CYOAPurpose    = "Purpose of the \"Origins Series\" "
+// ->PrefaceCopy // Only use for testing and display purposes. Remove divert for games.
+
+
 // ->PrefaceCopy // Only use for testing and display purposes. Remove divert for games.
 
 === PrefaceCopy ===
-{CYOAPurpose}
+SETTING
 {Setting}
+PURPOSE
+{CYOAPurpose}
 ->Characters
 
 === Characters ===
-<h4>Characters</h4>
+Characters
 CLERIC: {Cleric} <em>also {TheCleric} & {theCleric}</em>
 FIGHTER: {Fighter}<em> also {TheFighter} & {theFighter}</em>
 ROGUE: {Rogue} <em>also {TheRogue} & {TheRogue}</em>
@@ -59,14 +64,14 @@ WIZARD: {Wizard} <em>also {TheWizard} & {theWizard}</em>
 ->NPCs
 
 === NPCs ===
-<h4>NPCs</h4>
+NPCs
 BLUE MUG OWNER: {BMOwner}
 SERVING MAID: {ServingMaid}
 
 ->DiceRolls
 
 === DiceRolls ===
-<h4>Dice Rolls</h4>
+Dice Rolls
 -> Movement
 
 === Movement ===
