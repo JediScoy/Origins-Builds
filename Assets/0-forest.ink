@@ -1,13 +1,15 @@
-#title: Wandering in the Woods
+#title: Wandering in the Forest
 #author: Master Scoy
 
 INCLUDE OriginsGlobalVariables.ink
+INCLUDE 5RoomDungeon
+
 
 // STORY OUTLINE
-VAR Season0 =           "WANDERING IN THE WOODS"
-VAR S0Prologue =        "THE WOODS"
+VAR Season0 =           "WANDERING IN THE FOREST"
+VAR S0Prologue =        "THE FOREST"
 VAR S0EpisodeOne =      "AWAKE IN THE WOODS"
-VAR S0EpisodeTwo =      "THE CROSSROADS"
+VAR S0EpisodeTwo =      "CROSSROADS"
 VAR S0EpisodeThree =    "THE VILLAGE"
 VAR S0EpisodeFour =     "THE BLUE MUG"
 VAR S0EpisodeFive =     "HABITS OF MIND"
@@ -47,23 +49,32 @@ You have {items}.
 === S0Preface ===
 #audio: fx-valleys
 #audio: fx-valleys
-{CYOAPurpose}
-{Setting}
-    + [...]
--
-- Objectives of {Season0}
+PURPOSE OF ORIGINS SERIES:
+- {CYOAPurpose}
+- OBJECTIVES FOR "{Season0}":
 \* Content 
 \* Content
 \* Content
 \* Content
-\* Habits of Mind -
+\* Habits of Mind
+    + [next]
+- WORLD OF REGIO SCIENTIAE:
+- {WorldSetting}
+    + [next]
+
 
 - FIRST PUBLISHED: 
 - LAST UPDATED:
-+ NPCs & MONSTERS (Spoliers)
--
     +[Ω]
         ->StartMenu0
+    + NPCs & MONSTERS (Spoliers)
+    - Are you sure?
+        ++ [No]
+            ->StartMenu0
+        ++ Yes
+        -- NPC's ->NPCs
+        
+    
 ->DONE
 
 === S0Pro ===
@@ -299,4 +310,3 @@ VAR BanditAction2 =     "<b>Light Crossbow</b> +3 to hit, range 80 ft./320 ft., 
 VAR Drow =              ""
 
 // MONSTERS
-

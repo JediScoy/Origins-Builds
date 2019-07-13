@@ -40,18 +40,18 @@ VAR MoveRun = "run"
 CONST InitiativeExplained = "Everyone in combat or near combat, rolls a d20 to determine the order of each player's actions. For example, if PLAYER ONE rolls a 5 and PLAYER TWO rolls a 15, then PLAYER TWO performs his or her action before PLAYER TWO. Monsters also roll initiative."
 
 // PREFACE
-VAR Setting           = "This story takes place in \"Regio Scientiae: A Land of Understanding.\" Its a world of magic and steampunk. The story is a Choose Your Own Adventure (CYOA) which means You are an reader and active Player in story. The narratives can be done solo, but they are best experienced the first time as playful interaction with the Master Scoy (game master and teacher) and other real life Players (your classmates). NOTE: I do my best to make it functional and interesting, but if you encounter dead ends or have story suggestions - let me know!"
+VAR WorldSetting           = "This story takes place in \"Regio Scientiae: A Land of Understanding.\" Its a world of magic and steampunk. The story is a Choose Your Own Adventure (CYOA) which means You are an reader and active Player in story. The narratives can be done solo, but they are best experienced the first time as playful interaction with the Master Scoy (game master and teacher) and other real life Players (your classmates). NOTE: I do my best to make it functional and interesting, but if you encounter dead ends or have story suggestions - let me know!"
 
-VAR CYOAPurpose    = "Purpose of the \"Origins Series\" "
+VAR CYOAPurpose    = "More coming soon "
 // ->PrefaceCopy // Only use for testing and display purposes. Remove divert for games.
 
 
 // ->PrefaceCopy // Only use for testing and display purposes. Remove divert for games.
 
 === PrefaceCopy ===
-SETTING
-{Setting}
-PURPOSE
+SETTING OF REGIO SCIENTIAE
+{WorldSetting}
+PURPOSE OF SEASON:
 {CYOAPurpose}
 ->Characters
 
